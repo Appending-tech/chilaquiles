@@ -1,0 +1,59 @@
+/* This injects Tailwind's base styles and any base styles registered by plugins. */
+@tailwind base;
+/* This injects Tailwind's component classes and any component classes registered by plugins. */
+@tailwind components;
+/* This injects Tailwind's utility classes and any utility classes registered by plugins. */
+@tailwind utilities;
+
+.color-yankees-blue{
+    color: #1f2937;
+}
+.color-electric-indigo{
+    color: #6c00FF;
+}
+.color-medium-slate-blue{
+    color: #8f92f3;
+}
+.color-cultured{
+    color: #f6f6f6;
+}
+.color-blue-crayola{
+    color: #2563EB;
+}
+.color-white{
+    color: #ffffff;
+}
+.bg-dark-gunmetal{
+    background-color: #1A2131;
+}
+.bg-very-light-blue{
+    background-color: #6366f1;
+}
+.bg-medium-slate-blue{
+    background-color: #7C80F4;
+}
+.bg-blue-crayola{
+    background-color: #2563EB;
+}
+.bg-white{
+    background-color: #ffffff;
+}
+
+body { 
+	font-family: 'Varela Round', sans-serif;
+}
+
+@layer components {
+    .normal-button {
+        @apply bg-very-light-blue color-cultured border-black hover:shadow-xl rounded-md font-bold py-2 px-4 my-4 mx-2 min-w-[12%];
+    }
+    .muted-button {
+        @apply bg-gray-700 color-cultured border-black hover:shadow-xl rounded-md font-bold py-2 px-4 my-4 mx-2 min-w-[12%];
+    }
+    .muted-circle-button{
+        @apply p-3 m-1 rounded-full shadow hover:shadow-xl bg-gray-300 cursor-pointer inline-block;
+    }
+    .normal-circle-button{
+        @apply p-3 m-1 rounded-full shadow hover:shadow-xl bg-very-light-blue color-cultured cursor-pointer inline-block;
+    }
+}
