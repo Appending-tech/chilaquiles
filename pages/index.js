@@ -1,17 +1,17 @@
+import Footer from '@/components/footer'
 import MetaHead from '@/components/meta-head'
+import Navbar from '@/components/navbar'
+import Principal from '@/components/principal'
 
 export default function Home() {
   return (
     <>
       <MetaHead title="Home" />
+      <Navbar />
       <section>
-        <img src="appending_sf.png" className="h-48 mx-auto mt-14" />
-        
-        <h1 className="text-4xl font-bold text-center my-16">
-          <p className='text-purple-600'>Welcome back,</p>
-          Please Build a new project here!
-        </h1>
+        <Principal />
       </section>
+      <Footer />
     </>
   )
 }
